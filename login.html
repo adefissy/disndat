@@ -3,7 +3,7 @@
 <head>
 	<title>MealWell Login Page</title>
 
-	<!-- required meta tags-->
+							<!-- required meta tags-->
 	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,8 @@
 
 							<!--external CSS-->
 
-	<link rel="stylesheet" type="text/css" href="meanwell.css">
+	<link rel="stylesheet" type="text/css" href="mealwell.css">
+
 
 							<!-- Fonts Links --->
 
@@ -35,16 +36,19 @@
 			">Login</h2>
 
 				<form action="" method="">
+						
 					<div class="col-sm-12 mt-3">
-						<label class="form-label" for="emailLogin">Email Address</label>
-						<input class="form-control" type="text" name="emailaddress" placeholder="mymealwell@gmail.com" id="emailLogin" required>
+					
+						<label class="form-label" for="emailLogin" id="logalert">Email Address</label>
+						<input class="form-control" type="email" name="emailaddress" placeholder="mymealwell@gmail.com" id="emailLogin">
 					</div>
 					<div class="col-sm-12 mt-3">
-						<label class="form-label" for="pswd">Password</label><span style="font-size:14px">Forgoten password?</span>
-						<input class="form-control "type="password" name="emailaddress" placeholder="123abcd" id="pswd" required>
+						<label class="form-label" for="pswd">Password</label>
+						<input class="form-control "type="password" name="emailaddress" placeholder="123abcd" id="pswd">
 					</div>
+					<span style="font-size:12px;color:rgb(103,148,54);">Forgotten password?</span>
 					<div class="col-sm-12 mt-3">
-						<button type="submit" class="btn buttonLinks heading" style="box-shadow: 4px 3px 2px white;">Login</button>
+						<button type="submit" class="btn buttonLinks heading" style="box-shadow: 4px 3px 2px white;" id="loginBtn">Login</button>
 						<a href="signup.html" class="headingBlue">Sign up</a>
 					</div>
 					
@@ -54,6 +58,20 @@
 			</div>
 		</div>
 	</div>
+
+
+						<!---EXTERNAL JQUERY--->
+
+	<script type="text/javascript" src="jquerydownload.js"></script>
+
+						<!---JQUERY--->
+
+	<script type="text/javascript" src="mealwell.js"></script>
+
+
+						<!-- JS Files-->
+	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 
 
 </body>
